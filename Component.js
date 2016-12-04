@@ -25,7 +25,7 @@ class Component extends React.Component{
       },
       'mobile': {
         body: {
-          background:'#FFFFFF'
+          background:'green'
         },
       },
       'small': {
