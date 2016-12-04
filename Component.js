@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactCSS from 'reactcss';
-import bounds from 'react-bounds';
+import {wrap} from 'react-bounds';
 
 
 class Component extends ReactCSS.Component {
@@ -45,4 +45,4 @@ class Component extends ReactCSS.Component {
   }
 }
 
-export default bounds.wrap(Component);
+export default wrap(Component);
