@@ -1,8 +1,10 @@
 import React from 'react'
 import reactCSS from 'reactcss'
 import { wrap } from 'react-bounds'
-
+import  styles  from './styles.js'
 class Component extends React.Component{
+
+
   static bounds() {
     return {
       'mobile': {
@@ -17,27 +19,13 @@ class Component extends React.Component{
   }
 
   render(){
-    var styles = reactCSS({
-      'default': {
-        body: {
-          background:'red'
-        },
-      },
-      'mobile': {
-        body: {
-          background:'green'
-        },
-      },
-      'small': {
-        body: {
-          background:'yellow'
-        },
-      }
-    })
+
 
     return (
       <div style={ styles.body }>
-        { this.props.activeBounds }
+
+        { this.props.children }
+
       </div>
     );
   }

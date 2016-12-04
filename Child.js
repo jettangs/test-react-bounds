@@ -3,18 +3,16 @@ import reactCSS from 'reactcss'
 import { wrap } from 'react-bounds'
 
 class Child extends React.Component{
-  static bounds() {
-    return {
-      'mobile': {
-        minWidth: 0,
-        maxWidth: 500,
-      },
-    };
-  }
+
 
   render(){
+  var styles = reactCSS({
+      'child':{
+        background:'yellow'
+      }
+  })
     return (
-      <div>Child</div>
+      <div style={styles.child}>Child</div>
     )
   }
 }
